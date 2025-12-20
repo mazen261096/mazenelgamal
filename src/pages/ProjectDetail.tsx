@@ -1,9 +1,10 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { portfolioData } from "@/data/portfolioData";
 import { ArrowLeft, ExternalLink, Github, Share2 } from "lucide-react";
 import { useState } from "react";
 import { toast } from "@/hooks/use-toast";
+import { SafeLink } from "@/components/SafeLink";
 
 const ShareButton = ({ platform, url, title }: { platform: string; url: string; title: string }) => {
   const shareUrls: Record<string, string> = {
@@ -53,9 +54,9 @@ const ProjectDetail = () => {
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-2xl font-bold mb-4">Project not found</h1>
-          <Link to="/" className="text-primary hover:underline">
+          <SafeLink to="/" className="text-primary hover:underline">
             Go back home
-          </Link>
+          </SafeLink>
         </div>
       </div>
     );
@@ -79,13 +80,13 @@ const ProjectDetail = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <Link
+          <SafeLink
             to="/"
             className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors mb-8"
           >
             <ArrowLeft className="w-4 h-4" />
             Back to Portfolio
-          </Link>
+          </SafeLink>
         </motion.div>
 
         <div className="max-w-4xl mx-auto">

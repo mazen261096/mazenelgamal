@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { SafeLink } from "@/components/SafeLink";
 import { motion } from "framer-motion";
 import { portfolioData } from "@/data/portfolioData";
 
@@ -20,9 +20,9 @@ const Navbar = () => {
     >
       <div className="container px-6">
         <div className="glass rounded-full px-6 py-3 flex items-center justify-between">
-          <Link to="/" className="text-xl font-bold text-gradient">
+          <SafeLink to="/" className="text-xl font-bold text-gradient">
             {personalInfo.name.split(" ")[0]}
-          </Link>
+          </SafeLink>
           
           <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
