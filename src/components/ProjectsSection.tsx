@@ -1,7 +1,34 @@
 import { motion } from "framer-motion";
 import { portfolioData } from "@/data/portfolioData";
 import { SafeLink } from "@/components/SafeLink";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Github } from "lucide-react";
+
+// Store icons as SVG components
+const PlayStoreIcon = () => (
+  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M3.609 1.814L13.792 12 3.609 22.186c-.181-.085-.319-.26-.319-.482V2.296c0-.222.138-.397.319-.482zm10.831 9.469l2.416-2.416 6.168 3.561c.479.277.479.939 0 1.216l-6.168 3.561-2.416-2.416L17.946 12l-3.506-2.717zM4.275.85l9.948 9.948L4.275.85zm0 22.3L14.223 13.2 4.275 23.15z"/>
+  </svg>
+);
+
+const AppStoreIcon = () => (
+  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+  </svg>
+);
+
+const getLinkIcon = (link: string) => {
+  if (link.includes("github.com")) return <Github className="w-4 h-4" />;
+  if (link.includes("play.google.com")) return <PlayStoreIcon />;
+  if (link.includes("apps.apple.com") || link.includes("apple.com")) return <AppStoreIcon />;
+  return null;
+};
+
+const getLinkLabel = (link: string) => {
+  if (link.includes("github.com")) return "GitHub";
+  if (link.includes("play.google.com")) return "Play Store";
+  if (link.includes("apps.apple.com") || link.includes("apple.com")) return "App Store";
+  return "Link";
+};
 
 const ProjectsSection = () => {
   const { projects } = portfolioData;
@@ -21,9 +48,6 @@ const ProjectsSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="inline-block px-4 py-1.5 mb-4 text-sm font-medium text-primary bg-primary/10 rounded-full border border-primary/20">
-            Portfolio
-          </span>
           <h2 className="text-3xl md:text-5xl font-bold">
             Featured <span className="text-gradient">Projects</span>
           </h2>
@@ -47,16 +71,22 @@ const ProjectsSection = () => {
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+                    {/* Tech chips on image - show first 3 only */}
                     <div className="absolute bottom-4 left-4 right-4">
                       <div className="flex flex-wrap gap-2">
                         {project.technologies.slice(0, 3).map((tech) => (
                           <span
                             key={tech}
-                            className="px-2 py-1 text-xs font-medium bg-primary/20 text-primary rounded"
+                            className="px-2 py-1 text-xs font-medium bg-primary/20 text-primary rounded backdrop-blur-sm"
                           >
                             {tech}
                           </span>
                         ))}
+                        {project.technologies.length > 3 && (
+                          <span className="px-2 py-1 text-xs font-medium bg-muted/80 text-muted-foreground rounded backdrop-blur-sm">
+                            +{project.technologies.length - 3}
+                          </span>
+                        )}
                       </div>
                     </div>
                   </div>
@@ -67,9 +97,25 @@ const ProjectsSection = () => {
                       </h3>
                       <ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
                     </div>
-                    <p className="text-muted-foreground text-sm leading-relaxed line-clamp-3">
+                    <p className="text-muted-foreground text-sm leading-relaxed line-clamp-2 mb-4">
                       {project.description}
                     </p>
+                    {/* Store/GitHub links */}
+                    <div className="mt-auto flex flex-wrap gap-2">
+                      {project.links.map((link, linkIndex) => {
+                        const icon = getLinkIcon(link);
+                        if (!icon) return null;
+                        return (
+                          <span
+                            key={linkIndex}
+                            className="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium bg-secondary text-secondary-foreground rounded-md"
+                          >
+                            {icon}
+                            {getLinkLabel(link)}
+                          </span>
+                        );
+                      })}
+                    </div>
                   </div>
                 </div>
               </SafeLink>

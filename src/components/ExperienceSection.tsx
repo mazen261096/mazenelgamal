@@ -21,9 +21,6 @@ const ExperienceSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="inline-block px-4 py-1.5 mb-4 text-sm font-medium text-primary bg-primary/10 rounded-full border border-primary/20">
-            Career Path
-          </span>
           <h2 className="text-3xl md:text-5xl font-bold">
             Work <span className="text-gradient">Experience</span>
           </h2>

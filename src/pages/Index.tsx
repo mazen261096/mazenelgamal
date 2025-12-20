@@ -5,6 +5,7 @@ import ExperienceSection from "@/components/ExperienceSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { portfolioData } from "@/data/portfolioData";
 
 const Index = () => {
@@ -24,6 +25,7 @@ const Index = () => {
         <ContactSection />
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };

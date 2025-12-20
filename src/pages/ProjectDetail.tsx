@@ -1,10 +1,31 @@
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { portfolioData } from "@/data/portfolioData";
-import { ArrowLeft, ExternalLink, Github, Share2 } from "lucide-react";
+import { ArrowLeft, Github, Share2 } from "lucide-react";
 import { useState } from "react";
 import { toast } from "@/hooks/use-toast";
 import { SafeLink } from "@/components/SafeLink";
+import ImageSlider from "@/components/ImageSlider";
+
+// Store icons as SVG components
+const PlayStoreIcon = ({ className = "w-5 h-5" }: { className?: string }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+    <path d="M3.609 1.814L13.792 12 3.609 22.186c-.181-.085-.319-.26-.319-.482V2.296c0-.222.138-.397.319-.482zm10.831 9.469l2.416-2.416 6.168 3.561c.479.277.479.939 0 1.216l-6.168 3.561-2.416-2.416L17.946 12l-3.506-2.717zM4.275.85l9.948 9.948L4.275.85zm0 22.3L14.223 13.2 4.275 23.15z"/>
+  </svg>
+);
+
+const AppStoreIcon = ({ className = "w-5 h-5" }: { className?: string }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+  </svg>
+);
+
+const getLinkDetails = (link: string) => {
+  if (link.includes("github.com")) return { icon: <Github className="w-5 h-5" />, label: "View on GitHub" };
+  if (link.includes("play.google.com")) return { icon: <PlayStoreIcon />, label: "Get on Play Store" };
+  if (link.includes("apps.apple.com") || link.includes("apple.com")) return { icon: <AppStoreIcon />, label: "Get on App Store" };
+  return null;
+};
 
 const ShareButton = ({ platform, url, title }: { platform: string; url: string; title: string }) => {
   const shareUrls: Record<string, string> = {
@@ -72,6 +93,9 @@ const ProjectDetail = () => {
     });
   };
 
+  // Filter only valid store/github links
+  const validLinks = project.links.filter((link) => getLinkDetails(link) !== null);
+
   return (
     <div className="min-h-screen noise">
       <div className="container px-6 py-8">
@@ -97,21 +121,9 @@ const ProjectDetail = () => {
             className="mb-8"
           >
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6">
-              <div>
-                <h1 className="text-3xl md:text-5xl font-bold mb-2">
-                  {project.name}
-                </h1>
-                <div className="flex flex-wrap gap-2">
-                  {project.technologies.map((tech) => (
-                    <span
-                      key={tech}
-                      className="px-3 py-1 text-sm font-medium bg-primary/10 text-primary rounded-full border border-primary/20"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
+              <h1 className="text-3xl md:text-5xl font-bold">
+                {project.name}
+              </h1>
 
               <div className="relative">
                 <button
@@ -138,7 +150,9 @@ const ProjectDetail = () => {
                         className="w-10 h-10 flex items-center justify-center rounded-lg bg-secondary hover:bg-primary hover:text-primary-foreground transition-colors"
                         aria-label="Copy link"
                       >
-                        <ExternalLink className="w-5 h-5" />
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                        </svg>
                       </button>
                     </div>
                   </motion.div>
@@ -147,27 +161,32 @@ const ProjectDetail = () => {
             </div>
           </motion.div>
 
+          {/* Image Slider */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="mb-12"
+            className="mb-8"
           >
-            <div className="grid gap-4">
-              {project.images.map((image, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
-                  className="overflow-hidden rounded-xl glass"
+            <ImageSlider images={project.images} projectName={project.name} />
+          </motion.div>
+
+          {/* Technologies - Now under photos */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.15 }}
+            className="mb-8"
+          >
+            <h3 className="text-sm font-medium text-muted-foreground mb-3">Technologies</h3>
+            <div className="flex flex-wrap gap-2">
+              {project.technologies.map((tech) => (
+                <span
+                  key={tech}
+                  className="px-3 py-1.5 text-sm font-medium bg-primary/10 text-primary rounded-lg border border-primary/20"
                 >
-                  <img
-                    src={image}
-                    alt={`${project.name} screenshot ${index + 1}`}
-                    className="w-full h-auto object-cover"
-                  />
-                </motion.div>
+                  {tech}
+                </span>
               ))}
             </div>
           </motion.div>
@@ -184,15 +203,16 @@ const ProjectDetail = () => {
             </p>
           </motion.div>
 
-          {project.links.length > 0 && (
+          {validLinks.length > 0 && (
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
               className="flex flex-wrap gap-4"
             >
-              {project.links.map((link, index) => {
-                const isGithub = link.includes("github.com");
+              {validLinks.map((link, index) => {
+                const details = getLinkDetails(link);
+                if (!details) return null;
                 return (
                   <a
                     key={index}
@@ -201,17 +221,8 @@ const ProjectDetail = () => {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-primary text-primary-foreground font-semibold rounded-lg glow hover:opacity-90 transition-opacity"
                   >
-                    {isGithub ? (
-                      <>
-                        <Github className="w-5 h-5" />
-                        View on GitHub
-                      </>
-                    ) : (
-                      <>
-                        <ExternalLink className="w-5 h-5" />
-                        View Live
-                      </>
-                    )}
+                    {details.icon}
+                    {details.label}
                   </a>
                 );
               })}

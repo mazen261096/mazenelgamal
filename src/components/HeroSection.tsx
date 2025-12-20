@@ -10,7 +10,7 @@ const HeroSection = () => {
       {/* Background gradient orbs */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 -left-32 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float" />
-        <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl animate-float" style={{ animationDelay: "1.5s" }} />
+        <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float" style={{ animationDelay: "1.5s" }} />
       </div>
 
       <div className="container relative z-10 px-6 py-20">
@@ -31,25 +31,24 @@ const HeroSection = () => {
             </div>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            <span className="inline-block px-4 py-1.5 mb-6 text-sm font-medium text-primary bg-primary/10 rounded-full border border-primary/20">
-              {personalInfo.profession}
-            </span>
-          </motion.div>
-
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6"
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4"
           >
             Hi, I'm{" "}
             <span className="text-gradient">{personalInfo.name}</span>
           </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="text-xl md:text-2xl text-primary font-medium mb-4"
+          >
+            {personalInfo.profession}
+          </motion.p>
 
           <motion.p
             initial={{ opacity: 0, y: 30 }}
