@@ -31,18 +31,26 @@ export interface PersonalInfo {
   description: string;
 }
 
+export interface Skill {
+  id: string;
+  name: string;
+  category: string;
+  iconUrl?: string;
+}
+
 export interface PortfolioData {
   personalInfo: PersonalInfo;
   contactInfo: ContactInfo[];
   experience: Experience[];
   projects: Project[];
+  skills: Skill[];
 }
 
 export const portfolioData: PortfolioData = {
   personalInfo: {
-    name: "Your Name",
+    name: "Mazen",
     profession: "Flutter Developer",
-    profileImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+    profileImage: "/profile-photo.jpg", // Will be imported from assets
     description: "Passionate mobile developer crafting beautiful, performant applications with Flutter. Turning ideas into pixel-perfect experiences."
   },
   contactInfo: [
@@ -133,5 +141,34 @@ export const portfolioData: PortfolioData = {
         "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=600&h=400&fit=crop"
       ]
     }
+  ],
+  skills: [
+    // Mobile Development
+    { id: "1", name: "Flutter", category: "Mobile" },
+    { id: "2", name: "Dart", category: "Mobile" },
+    { id: "3", name: "Android", category: "Mobile" },
+    { id: "4", name: "iOS", category: "Mobile" },
+    
+    // State Management
+    { id: "5", name: "BLoC", category: "State Management" },
+    { id: "6", name: "Riverpod", category: "State Management" },
+    { id: "7", name: "Provider", category: "State Management" },
+    { id: "8", name: "GetX", category: "State Management" },
+    
+    // Backend & APIs
+    { id: "9", name: "Firebase", category: "Backend" },
+    { id: "10", name: "REST APIs", category: "Backend" },
+    { id: "11", name: "GraphQL", category: "Backend" },
+    { id: "12", name: "Supabase", category: "Backend" },
+    
+    // Tools & Others
+    { id: "13", name: "Git", category: "Tools" },
+    { id: "14", name: "CI/CD", category: "Tools" },
+    { id: "15", name: "Clean Architecture", category: "Architecture" },
+    { id: "16", name: "MVVM", category: "Architecture" },
+    { id: "17", name: "Unit Testing", category: "Testing" },
+    { id: "18", name: "Integration Testing", category: "Testing" },
+    { id: "19", name: "Figma", category: "Design" },
+    { id: "20", name: "Agile/Scrum", category: "Methodology" }
   ]
 };
