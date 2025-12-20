@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import ExperienceSection from "@/components/ExperienceSection";
@@ -10,31 +10,21 @@ import { portfolioData } from "@/data/portfolioData";
 const Index = () => {
   const { personalInfo } = portfolioData;
 
-  return (
-    <>
-      <Helmet>
-        <title>{personalInfo.name} | {personalInfo.profession}</title>
-        <meta name="description" content={personalInfo.description} />
-        <meta property="og:title" content={`${personalInfo.name} | ${personalInfo.profession}`} />
-        <meta property="og:description" content={personalInfo.description} />
-        <meta property="og:image" content={personalInfo.profileImage} />
-        <meta property="og:type" content="website" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={`${personalInfo.name} | ${personalInfo.profession}`} />
-        <meta name="twitter:description" content={personalInfo.description} />
-      </Helmet>
+  useEffect(() => {
+    document.title = `${personalInfo.name} | ${personalInfo.profession}`;
+  }, [personalInfo.name, personalInfo.profession]);
 
-      <div className="min-h-screen noise">
-        <Navbar />
-        <main>
-          <HeroSection />
-          <ExperienceSection />
-          <ProjectsSection />
-          <ContactSection />
-        </main>
-        <Footer />
-      </div>
-    </>
+  return (
+    <div className="min-h-screen noise">
+      <Navbar />
+      <main>
+        <HeroSection />
+        <ExperienceSection />
+        <ProjectsSection />
+        <ContactSection />
+      </main>
+      <Footer />
+    </div>
   );
 };
 
