@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { portfolioData } from "@/data/portfolioData";
-import { Link } from "react-router-dom";
+import { SafeLink } from "@/components/SafeLink";
 import { ArrowUpRight } from "lucide-react";
 
 const ProjectsSection = () => {
@@ -38,7 +38,7 @@ const ProjectsSection = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Link to={`/project/${project.id}`} className="group block h-full">
+              <SafeLink to={`/project/${project.id}`} className="group block h-full">
                 <div className="glass glass-hover rounded-xl overflow-hidden h-full flex flex-col">
                   <div className="relative overflow-hidden aspect-video">
                     <img
@@ -72,7 +72,7 @@ const ProjectsSection = () => {
                     </p>
                   </div>
                 </div>
-              </Link>
+              </SafeLink>
             </motion.div>
           ))}
         </div>
