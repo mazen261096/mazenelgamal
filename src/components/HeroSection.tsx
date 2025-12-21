@@ -1,7 +1,46 @@
 import { motion } from "framer-motion";
 import { portfolioData } from "@/data/portfolioData";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, Download } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.jpg";
+import { useEffect, useState } from "react";
+
+const TypingText = ({ text, delay = 0 }: { text: string; delay?: number }) => {
+  const [displayedText, setDisplayedText] = useState("");
+  const [showCursor, setShowCursor] = useState(true);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      let currentIndex = 0;
+      const interval = setInterval(() => {
+        if (currentIndex <= text.length) {
+          setDisplayedText(text.slice(0, currentIndex));
+          currentIndex++;
+        } else {
+          clearInterval(interval);
+          // Keep cursor blinking after typing is done
+          setTimeout(() => setShowCursor(false), 2000);
+        }
+      }, 80);
+      return () => clearInterval(interval);
+    }, delay);
+    return () => clearTimeout(timeout);
+  }, [text, delay]);
+
+  return (
+    <span>
+      {displayedText}
+      {showCursor && (
+        <motion.span
+          animate={{ opacity: [1, 0] }}
+          transition={{ duration: 0.5, repeat: Infinity, repeatType: "reverse" }}
+          className="text-primary"
+        >
+          |
+        </motion.span>
+      )}
+    </span>
+  );
+};
 
 const HeroSection = () => {
   const { personalInfo } = portfolioData;
@@ -22,14 +61,22 @@ const HeroSection = () => {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6 }}
-              className="mb-8 inline-block"
+              className="mb-8 mt-8 inline-block"
             >
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-primary rounded-full blur-xl opacity-50 animate-pulse-glow" />
-                <img
+                <motion.img
                   src={profilePhoto}
                   alt={personalInfo.name}
                   className="relative w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-2 border-primary/50"
+                  animate={{ 
+                    y: [0, -8, 0],
+                  }}
+                  transition={{ 
+                    duration: 3,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
                 />
               </div>
             </motion.div>
@@ -41,7 +88,9 @@ const HeroSection = () => {
               className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4"
             >
               Hi, I'm{" "}
-              <span className="text-gradient">{personalInfo.name}</span>
+              <span className="text-gradient">
+                <TypingText text={personalInfo.name} delay={800} />
+              </span>
             </motion.h1>
 
             <motion.p
@@ -50,7 +99,7 @@ const HeroSection = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-xl md:text-2xl text-primary font-medium mb-4"
             >
-              {personalInfo.profession}
+              <TypingText text={personalInfo.profession} delay={1500} />
             </motion.p>
 
             <motion.p
@@ -80,6 +129,16 @@ const HeroSection = () => {
               >
                 Get In Touch
               </a>
+              {portfolioData.cvUrl && (
+                <a
+                  href={portfolioData.cvUrl}
+                  download
+                  className="flex items-center gap-2 px-8 py-3.5 glass glass-hover font-semibold rounded-lg text-primary hover:scale-105 transition-all duration-300"
+                >
+                  <Download className="w-5 h-5" />
+                  Download CV
+                </a>
+              )}
             </motion.div>
           </div>
         </div>
