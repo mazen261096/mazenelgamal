@@ -22,6 +22,7 @@ export interface Project {
   technologies: string[];
   links: string[];
   images: string[];
+  isEndToEnd?: boolean; // Mark if project is end-to-end
 }
 
 export interface PersonalInfo {
@@ -114,7 +115,8 @@ export const portfolioData: PortfolioData = {
       images: [
         "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
         "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop"
-      ]
+      ],
+      isEndToEnd: true
     },
     {
       id: "2",
@@ -128,7 +130,8 @@ export const portfolioData: PortfolioData = {
       images: [
         "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=600&h=400&fit=crop",
         "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop"
-      ]
+      ],
+      isEndToEnd: false
     },
     {
       id: "3",
@@ -143,7 +146,8 @@ export const portfolioData: PortfolioData = {
       images: [
         "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&h=400&fit=crop",
         "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=600&h=400&fit=crop"
-      ]
+      ],
+      isEndToEnd: true
     },
     {
       id: "4",
@@ -157,7 +161,8 @@ export const portfolioData: PortfolioData = {
       images: [
         "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&h=400&fit=crop",
         "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=400&fit=crop"
-      ]
+      ],
+      isEndToEnd: true
     },
     {
       id: "5",
@@ -170,7 +175,8 @@ export const portfolioData: PortfolioData = {
       images: [
         "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=400&fit=crop",
         "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=600&h=400&fit=crop"
-      ]
+      ],
+      isEndToEnd: false
     },
     {
       id: "6",
@@ -185,7 +191,8 @@ export const portfolioData: PortfolioData = {
       images: [
         "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&h=400&fit=crop",
         "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop"
-      ]
+      ],
+      isEndToEnd: true
     }
   ],
   skills: [

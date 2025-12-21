@@ -1,13 +1,15 @@
 import { SafeLink } from "@/components/SafeLink";
 import { motion } from "framer-motion";
 import { portfolioData } from "@/data/portfolioData";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const Navbar = () => {
   const { personalInfo } = portfolioData;
 
   const navItems = [
-    { label: "Experience", href: "#experience" },
     { label: "Projects", href: "#projects" },
+    { label: "Skills", href: "#skills" },
+    { label: "Experience", href: "#experience" },
     { label: "Contact", href: "#contact" },
   ];
 
@@ -36,12 +38,15 @@ const Navbar = () => {
             ))}
           </div>
 
-          <a
-            href="#contact"
-            className="px-4 py-2 text-sm font-medium bg-gradient-primary text-primary-foreground rounded-full hover:opacity-90 transition-opacity"
-          >
-            Hire Me
-          </a>
+          <div className="flex items-center gap-3">
+            <ThemeToggle />
+            <a
+              href="#contact"
+              className="px-4 py-2 text-sm font-medium bg-gradient-primary text-primary-foreground rounded-full hover:opacity-90 transition-opacity"
+            >
+              Hire Me
+            </a>
+          </div>
         </div>
       </div>
     </motion.nav>

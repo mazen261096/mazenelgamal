@@ -6,7 +6,61 @@
 
 @layer base {
   :root {
-    /* Flutter Blue Theme */
+    /* Light Theme */
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 207 90% 54%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 207 90% 54%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 207 90% 54%;
+
+    --radius: 0.75rem;
+
+    /* Custom tokens */
+    --glow-primary: 207 90% 54%;
+    --gradient-start: 207 90% 54%;
+    --gradient-end: 199 89% 48%;
+    
+    --sidebar-background: 210 40% 98%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 207 90% 54%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 40% 96%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 214 32% 91%;
+    --sidebar-ring: 207 90% 54%;
+    
+    /* WhatsApp */
+    --whatsapp: 142 70% 45%;
+
+    /* End-to-End badge */
+    --end-to-end: 142 76% 36%;
+    --end-to-end-foreground: 0 0% 100%;
+  }
+
+  .dark {
+    /* Dark Flutter Blue Theme */
     --background: 222 47% 6%;
     --foreground: 210 40% 98%;
 
@@ -35,9 +89,7 @@
     --input: 222 30% 18%;
     --ring: 207 90% 54%;
 
-    --radius: 0.75rem;
-
-    /* Flutter Custom tokens */
+    /* Custom tokens */
     --glow-primary: 207 90% 54%;
     --gradient-start: 207 90% 54%;
     --gradient-end: 199 89% 48%;
@@ -53,6 +105,10 @@
     
     /* WhatsApp */
     --whatsapp: 142 70% 45%;
+
+    /* End-to-End badge */
+    --end-to-end: 142 76% 36%;
+    --end-to-end-foreground: 0 0% 100%;
   }
 }
 
