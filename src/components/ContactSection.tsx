@@ -23,14 +23,14 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-24 relative">
-      <div className="container px-6">
+    <section id="contact" className="py-12 md:py-16 relative">
+      <div className="container px-4 md:px-6 max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-10"
         >
           <h2 className="text-3xl md:text-5xl font-bold mb-4">
             Let's <span className="text-gradient">Connect</span>
