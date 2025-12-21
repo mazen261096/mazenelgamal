@@ -34,19 +34,19 @@ const ProjectsSection = () => {
   const { projects } = portfolioData;
 
   return (
-    <section id="projects" className="py-24 relative">
+    <section id="projects" className="py-12 md:py-16 relative">
       {/* Background accent */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl" />
       </div>
 
-      <div className="container px-6 relative z-10">
+      <div className="container px-4 md:px-6 max-w-7xl relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-10"
         >
           <h2 className="text-3xl md:text-5xl font-bold">
             Featured <span className="text-gradient">Projects</span>

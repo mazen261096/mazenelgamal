@@ -29,14 +29,14 @@ const SkillsSection = () => {
   };
 
   return (
-    <section id="skills" className="py-24 relative">
-      <div className="container px-6">
+    <section id="skills" className="py-12 md:py-16 relative">
+      <div className="container px-4 md:px-6 max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-10"
         >
           <h2 className="text-3xl md:text-5xl font-bold">
             Technical <span className="text-gradient">Skills</span>
@@ -44,7 +44,7 @@ const SkillsSection = () => {
         </motion.div>
 
         <motion.div
-          className="max-w-4xl mx-auto"
+          className="max-w-6xl mx-auto"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
