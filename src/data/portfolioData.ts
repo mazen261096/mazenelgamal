@@ -50,178 +50,212 @@ export interface PortfolioData {
 
 export const portfolioData: PortfolioData = {
   personalInfo: {
-    name: "Mazen",
+    name: "Mazen Elgamal",
     profession: "Flutter Developer",
     profileImage: "/profile-photo.jpg",
-    description: "Passionate mobile developer crafting beautiful, performant applications with Flutter. Turning ideas into pixel-perfect experiences."
+    description: "Flutter Developer with 3+ years experience building scalable, production-ready apps using Clean Architecture, BLoC/Cubit, MVVM and modern CI/CD pipelines. Experienced with mobile (Android/iOS) and desktop (Windows/macOS) targets, Firebase, Supabase and end-to-end project delivery. Quick learner, strong ownership of releases, testing and app architecture."
   },
-  cvUrl: "/cv.pdf", // Add your CV file to public folder
+  cvUrl: "/Mazen-Elgamal-CV.pdf",
   contactInfo: [
     {
       id: "1",
       name: "Email",
       logoUrl: "email",
-      linkOrPhone: "mailto:your@email.com"
+      linkOrPhone: "mailto:Mazen261096@gmail.com"
     },
     {
       id: "2",
       name: "LinkedIn",
       logoUrl: "linkedin",
-      linkOrPhone: "https://linkedin.com/in/yourname"
+      linkOrPhone: "https://linkedin.com/in/your-linkedin"
     },
     {
       id: "3",
       name: "Phone",
       logoUrl: "phone",
-      linkOrPhone: "+201234567890"
+      linkOrPhone: "+20 1288833353"
     },
     {
       id: "4",
       name: "GitHub",
       logoUrl: "github",
-      linkOrPhone: "https://github.com/yourname"
+      linkOrPhone: "https://github.com/your-github"
     }
   ],
   experience: [
     {
-      id: "1",
-      companyName: "Tech Company",
-      logoUrl: "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=100&h=100&fit=crop",
+      id: "exp-1",
+      companyName: "Soul and Body",
+      logoUrl: "/logos/soul-and-body.png",
       role: "Senior Flutter Developer",
-      description: "Led mobile development team, built scalable Flutter applications with clean architecture, implemented CI/CD pipelines, and mentored junior developers.",
-      startDate: "2022-01-01",
+      description: "Senior Flutter Developer delivering production SaaS apps end-to-end (design → APIs → stores). Built and scaled clinic & marketplace products with real-world deployment constraints. Ownership of architecture, releases, testing, and delivery.",
+      startDate: "2024-11-01",
       endDate: "Present"
     },
     {
-      id: "2",
-      companyName: "Startup Inc",
-      logoUrl: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=100&h=100&fit=crop",
-      role: "Flutter Developer",
-      description: "Developed cross-platform mobile applications, integrated REST APIs, implemented state management with BLoC pattern.",
-      startDate: "2020-06-01",
-      endDate: "2021-12-31"
+      id: "exp-2",
+      companyName: "Depo Web",
+      logoUrl: "/logos/depo-web.png",
+      role: "Mid-Level Flutter Developer",
+      description: "Developed Talabat-like food delivery app using BLoC & Clean Architecture. Implemented optimized APIs, real-time order tracking, and improved UI/UX performance across multiple screen sizes.",
+      startDate: "2024-04-01",
+      endDate: "2024-10-31"
+    },
+    {
+      id: "exp-3",
+      companyName: "Elgamal Cars",
+      logoUrl: "/logos/elgamal-cars.png",
+      role: "Founder & Software Developer",
+      description: "Built a desktop car inventory system with advanced filtering & pricing logic, Excel integration, automated PDF generation and social-media / client communication integration.",
+      startDate: "2023-04-01",
+      endDate: "2024-03-31"
+    },
+    {
+      id: "exp-4",
+      companyName: "Future of Egypt (Army Forces)",
+      logoUrl: "/logos/army-forces.png",
+      role: "Junior Flutter Developer",
+      description: "Developed a secure real-time communication app (WhatsApp-like). Built responsive, high-performance UI across devices and integrated Firebase & .NET APIs for realtime backend.",
+      startDate: "2022-03-01",
+      endDate: "2023-03-31"
+    },
+    {
+      id: "exp-5",
+      companyName: "Sevenstili Designs (Freelance)",
+      logoUrl: "/logos/sevenstili.png",
+      role: "Flutter Developer (Freelance)",
+      description: "Developed a financial management mobile app with real-time transactions. Integrated Firebase Auth, Notifications, Realtime updates and multi-role access control for sensitive financial data.",
+      startDate: "2021-10-01",
+      endDate: "2022-02-28"
     }
   ],
   projects: [
     {
-      id: "1",
-      name: "E-Commerce App",
-      description: "A full-featured e-commerce mobile application with payment integration, real-time notifications, and seamless user experience. Built with Flutter and Firebase backend.",
-      technologies: ["Flutter", "Dart", "Firebase", "Stripe", "BLoC", "Clean Architecture", "Push Notifications"],
+      id: "proj-mwakibun",
+      name: "Mwakibun – Clinic Management SaaS",
+      description: "Cross-platform SaaS app for clinic management: doctor schedules, room & bed bookings, patient records, prescriptions and attachments. Designed for multi-department clinics and real-time booking workflows.",
+      technologies: ["Flutter", "Dart", "MVVM", "Cubit", "REST (Dio)", "Firebase (Auth, Firestore, FCM)", "Realtime", "PDF Generation", "Cloud Storage"],
       links: [
-        "https://github.com/yourname/ecommerce-app",
-        "https://play.google.com/store/apps/details?id=ecommerce"
+        "https://yourdomain.com/mwakibun",
+        "https://github.com/yourname/mwakibun"
       ],
       images: [
-        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop"
+        "/images/mwakibun-1.png",
+        "/images/mwakibun-2.png"
       ],
       isEndToEnd: true
     },
     {
-      id: "2",
-      name: "Fitness Tracker",
-      description: "Health and fitness tracking application with workout plans, progress analytics, and social features. Integrated with wearable devices for real-time data sync.",
-      technologies: ["Flutter", "Dart", "Clean Architecture", "GraphQL", "Riverpod", "Health Kit", "Google Fit"],
+      id: "proj-sbhr",
+      name: "SB Hr – Employee Attendance & HR App",
+      description: "Cross-platform HR app for attendance, leave requests, break tracking and working-hours calculation. I handled iOS support and external TestFlight deployment for company-wide testing.",
+      technologies: ["Flutter", "Dart", "REST API", "Firebase", "CI/CD (TestFlight)", "MVVM", "Cubit"],
       links: [
-        "https://github.com/yourname/fitness-tracker",
-        "https://apps.apple.com/app/fitness-tracker"
+        "https://yourdomain.com/sb-hr",
+        "https://github.com/yourname/sb-hr"
       ],
       images: [
-        "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=600&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop"
+        "/images/sbhr-1.png",
+        "/images/sbhr-2.png"
       ],
       isEndToEnd: false
     },
     {
-      id: "3",
-      name: "Task Management",
-      description: "Collaborative task management tool with real-time sync, team workspaces, and intuitive drag-and-drop interface. Perfect for agile teams.",
-      technologies: ["Flutter", "Dart", "Supabase", "Riverpod", "Animations", "Local Storage"],
+      id: "proj-masssooq",
+      name: "Mass Sooq – Marketplace Mobile App",
+      description: "OpenSooq-like marketplace for buying & selling across categories. Features: advanced filtering, real-time tracking, vendor ratings and performant responsive UI.",
+      technologies: ["Flutter", "Dart", "MVVM", "Cubit", "FCM", "REST (Dio)", "Realtime", "Filtering System"],
       links: [
-        "https://github.com/yourname/task-app",
-        "https://apps.apple.com/app/task-management",
-        "https://play.google.com/store/apps/details?id=taskapp"
+        "https://yourdomain.com/mass-sooq",
+        "https://github.com/yourname/mass-sooq"
       ],
       images: [
-        "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=600&h=400&fit=crop"
+        "/images/masssooq-1.png",
+        "/images/masssooq-2.png"
       ],
       isEndToEnd: true
     },
     {
-      id: "4",
-      name: "Food Delivery",
-      description: "Complete food delivery solution with restaurant listings, real-time order tracking, payment integration, and driver app. Smooth animations throughout.",
-      technologies: ["Flutter", "Dart", "Firebase", "Google Maps", "Stripe", "BLoC", "Push Notifications", "Animations"],
+      id: "proj-delivendor",
+      name: "Delivendor – Food & Grocery Delivery App",
+      description: "Mobile app for food & grocery ordering with advanced filtering, real-time order tracking, vendor ratings and full e-commerce flows.",
+      technologies: ["Flutter", "Dart", "BLoC", "Clean Architecture", "REST API", "Google Maps", "Stripe", "Push Notifications", "Animations"],
       links: [
-        "https://github.com/yourname/food-delivery",
-        "https://play.google.com/store/apps/details?id=fooddelivery"
+        "https://yourdomain.com/delivendor",
+        "https://github.com/yourname/delivendor"
       ],
       images: [
-        "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=400&fit=crop"
-      ],
-      isEndToEnd: true
-    },
-    {
-      id: "5",
-      name: "Social Media App",
-      description: "Modern social media platform with stories, reels, real-time chat, and content discovery. Built with focus on performance and smooth scrolling.",
-      technologies: ["Flutter", "Dart", "Firebase", "WebSocket", "GetX", "Video Player", "Image Picker", "Caching"],
-      links: [
-        "https://github.com/yourname/social-app"
-      ],
-      images: [
-        "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=600&h=400&fit=crop"
+        "/images/delivendor-1.png",
+        "/images/delivendor-2.png"
       ],
       isEndToEnd: false
     },
     {
-      id: "6",
-      name: "Banking App",
-      description: "Secure digital banking application with biometric authentication, transaction history, money transfers, and bill payments. Focus on security and UX.",
-      technologies: ["Flutter", "Dart", "Clean Architecture", "BLoC", "Biometrics", "Encryption", "Local Auth", "Charts"],
+      id: "proj-elgamal-cars",
+      name: "Elgamal Cars – Desktop Inventory App",
+      description: "Desktop app (Windows/macOS) for car inventory management with advanced filtering, dynamic pricing algorithm, Excel import/export and automated PDF reports. Integrated social sharing for client communication.",
+      technologies: ["Flutter (Desktop)", "Dart", "Cubit", "Excel Integration", "PDF Generation", "Desktop Packaging"],
       links: [
-        "https://github.com/yourname/banking-app",
-        "https://apps.apple.com/app/banking-app",
-        "https://play.google.com/store/apps/details?id=bankingapp"
+        "https://yourdomain.com/elgamal-cars"
       ],
       images: [
-        "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop"
+        "/images/elgamal-1.png",
+        "/images/elgamal-2.png"
+      ],
+      isEndToEnd: true
+    },
+    {
+      id: "proj-sevenstili",
+      name: "Sevenstili Designs – Financial Management App",
+      description: "Financial management app: multi-wallets, deposits/withdrawals, transaction logs, invoices, real-time notifications and role-based access control. Built with Firebase realtime features and PDF exports.",
+      technologies: ["Flutter", "Dart", "Firebase (Auth, Firestore, FCM)", "Cubit", "PDF Generation", "Realtime Notifications", "Role-Based Access"],
+      links: [
+        "https://yourdomain.com/sevenstili",
+        "https://github.com/yourname/sevenstili"
+      ],
+      images: [
+        "/images/sevenstili-1.png",
+        "/images/sevenstili-2.png"
       ],
       isEndToEnd: true
     }
   ],
   skills: [
-    // Mobile Development
-    { id: "1", name: "Flutter", category: "Mobile" },
-    { id: "2", name: "Dart", category: "Mobile" },
-    { id: "3", name: "Android", category: "Mobile" },
-    { id: "4", name: "iOS", category: "Mobile" },
-    
-    // State Management
-    { id: "5", name: "BLoC", category: "State Management" },
-    { id: "6", name: "Riverpod", category: "State Management" },
-    { id: "7", name: "Provider", category: "State Management" },
-    { id: "8", name: "GetX", category: "State Management" },
-    
-    // Backend & APIs
-    { id: "9", name: "Firebase", category: "Backend" },
-    { id: "10", name: "REST APIs", category: "Backend" },
-    { id: "11", name: "GraphQL", category: "Backend" },
-    { id: "12", name: "Supabase", category: "Backend" },
-    
-    // Tools & Others
-    { id: "13", name: "Git", category: "Tools" },
-    { id: "14", name: "CI/CD", category: "Tools" },
-    { id: "15", name: "Clean Architecture", category: "Architecture" },
-    { id: "16", name: "MVVM", category: "Architecture" },
-    { id: "17", name: "Unit Testing", category: "Testing" },
-    { id: "18", name: "Integration Testing", category: "Testing" },
-    { id: "19", name: "Figma", category: "Design" },
-    { id: "20", name: "Agile/Scrum", category: "Methodology" }
+    { id: "s-1", name: "Flutter", category: "Mobile" },
+    { id: "s-2", name: "Dart", category: "Mobile" },
+    { id: "s-3", name: "Android", category: "Mobile" },
+    { id: "s-4", name: "iOS", category: "Mobile" },
+    { id: "s-5", name: "Windows (Flutter Desktop)", category: "Desktop" },
+    { id: "s-6", name: "macOS (Flutter Desktop)", category: "Desktop" },
+    { id: "s-7", name: "Clean Architecture", category: "Architecture" },
+    { id: "s-8", name: "MVVM", category: "Architecture" },
+    { id: "s-9", name: "SOLID", category: "Principles" },
+    { id: "s-10", name: "BLoC", category: "State Management" },
+    { id: "s-11", name: "Cubit", category: "State Management" },
+    { id: "s-12", name: "Riverpod", category: "State Management" },
+    { id: "s-13", name: "Provider", category: "State Management" },
+    { id: "s-14", name: "GetX", category: "State Management" },
+    { id: "s-15", name: "REST APIs", category: "Backend" },
+    { id: "s-16", name: "GraphQL", category: "Backend" },
+    { id: "s-17", name: "Firebase (Auth, Firestore, FCM)", category: "Backend" },
+    { id: "s-18", name: "Supabase (Postgres)", category: "Backend" },
+    { id: "s-19", name: "Realtime Data & Notifications", category: "Backend" },
+    { id: "s-20", name: "Dio", category: "Networking" },
+    { id: "s-21", name: "CI/CD", category: "Tools" },
+    { id: "s-22", name: "GitHub Actions", category: "Tools" },
+    { id: "s-23", name: "Fastlane", category: "Tools" },
+    { id: "s-24", name: "Firebase App Distribution", category: "Tools" },
+    { id: "s-25", name: "Flutter Flavors", category: "Tools" },
+    { id: "s-26", name: "Unit Testing", category: "Testing" },
+    { id: "s-27", name: "Integration Testing", category: "Testing" },
+    { id: "s-28", name: "Figma", category: "Design" },
+    { id: "s-29", name: "Payments (Stripe/others)", category: "Integrations" },
+    { id: "s-30", name: "Maps (Google Maps)", category: "Integrations" },
+    { id: "s-31", name: "Charts & Analytics", category: "Integrations" },
+    { id: "s-32", name: "Excel Integration", category: "Tools" },
+    { id: "s-33", name: "PDF Generation", category: "Tools" },
+    { id: "s-34", name: "Firebase Messaging (firebase_messaging)", category: "Tools" },
+    { id: "s-35", name: "flutter_local_notifications", category: "Tools" },
+    { id: "s-36", name: "Agile / Jira", category: "Methodology" }
   ]
 };
