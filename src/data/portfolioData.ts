@@ -221,41 +221,32 @@ export const portfolioData: PortfolioData = {
     }
   ],
   skills: [
-    { id: "s-1", name: "Flutter", category: "Mobile" },
-    { id: "s-2", name: "Dart", category: "Mobile" },
-    { id: "s-3", name: "Android", category: "Mobile" },
-    { id: "s-4", name: "iOS", category: "Mobile" },
-    { id: "s-5", name: "Windows (Flutter Desktop)", category: "Desktop" },
-    { id: "s-6", name: "macOS (Flutter Desktop)", category: "Desktop" },
-    { id: "s-7", name: "Clean Architecture", category: "Architecture" },
-    { id: "s-8", name: "MVVM", category: "Architecture" },
-    { id: "s-9", name: "SOLID", category: "Principles" },
-    { id: "s-10", name: "BLoC", category: "State Management" },
-    { id: "s-11", name: "Cubit", category: "State Management" },
-    { id: "s-12", name: "Riverpod", category: "State Management" },
-    { id: "s-13", name: "Provider", category: "State Management" },
-    { id: "s-14", name: "GetX", category: "State Management" },
-    { id: "s-15", name: "REST APIs", category: "Backend" },
-    { id: "s-16", name: "GraphQL", category: "Backend" },
-    { id: "s-17", name: "Firebase (Auth, Firestore, FCM)", category: "Backend" },
-    { id: "s-18", name: "Supabase (Postgres)", category: "Backend" },
-    { id: "s-19", name: "Realtime Data & Notifications", category: "Backend" },
-    { id: "s-20", name: "Dio", category: "Networking" },
-    { id: "s-21", name: "CI/CD", category: "Tools" },
-    { id: "s-22", name: "GitHub Actions", category: "Tools" },
-    { id: "s-23", name: "Fastlane", category: "Tools" },
-    { id: "s-24", name: "Firebase App Distribution", category: "Tools" },
-    { id: "s-25", name: "Flutter Flavors", category: "Tools" },
-    { id: "s-26", name: "Unit Testing", category: "Testing" },
-    { id: "s-27", name: "Integration Testing", category: "Testing" },
-    { id: "s-28", name: "Figma", category: "Design" },
-    { id: "s-29", name: "Payments (Stripe/others)", category: "Integrations" },
-    { id: "s-30", name: "Maps (Google Maps)", category: "Integrations" },
-    { id: "s-31", name: "Charts & Analytics", category: "Integrations" },
-    { id: "s-32", name: "Excel Integration", category: "Tools" },
-    { id: "s-33", name: "PDF Generation", category: "Tools" },
-    { id: "s-34", name: "Firebase Messaging (firebase_messaging)", category: "Tools" },
-    { id: "s-35", name: "flutter_local_notifications", category: "Tools" },
-    { id: "s-36", name: "Agile / Jira", category: "Methodology" }
+    // Platforms
+    { id: "s-1", name: "Flutter", category: "Platforms" },
+    { id: "s-2", name: "Dart", category: "Platforms" },
+    { id: "s-3", name: "Android", category: "Platforms" },
+    { id: "s-4", name: "iOS", category: "Platforms" },
+    { id: "s-5", name: "Windows & macOS (Desktop)", category: "Platforms" },
+
+    // Architecture & Patterns
+    { id: "s-6", name: "Clean Architecture", category: "Architecture & Patterns" },
+    { id: "s-7", name: "MVVM", category: "Architecture & Patterns" },
+    { id: "s-8", name: "SOLID Principles", category: "Architecture & Patterns" },
+    { id: "s-9", name: "BLoC / Cubit", category: "Architecture & Patterns" },
+    { id: "s-10", name: "Riverpod", category: "Architecture & Patterns" },
+
+    // Backend & APIs
+    { id: "s-11", name: "REST APIs (Dio)", category: "Backend & Integrations" },
+    { id: "s-12", name: "Firebase (Auth, Firestore, FCM)", category: "Backend & Integrations" },
+    { id: "s-13", name: "Supabase", category: "Backend & Integrations" },
+    { id: "s-14", name: "Google Maps", category: "Backend & Integrations" },
+    { id: "s-15", name: "Stripe Payments", category: "Backend & Integrations" },
+
+    // DevOps & Tools
+    { id: "s-16", name: "CI/CD (GitHub Actions, Fastlane)", category: "DevOps & Tools" },
+    { id: "s-17", name: "Firebase App Distribution & TestFlight", category: "DevOps & Tools" },
+    { id: "s-18", name: "Unit & Integration Testing", category: "DevOps & Tools" },
+    { id: "s-19", name: "Figma", category: "DevOps & Tools" },
+    { id: "s-20", name: "Agile / Jira", category: "DevOps & Tools" }
   ]
 };
