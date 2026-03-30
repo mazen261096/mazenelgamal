@@ -44,6 +44,8 @@ const ImageSlider = ({ images, projectName }: ImageSliderProps) => {
               exit={{ opacity: 0, x: -50 }}
               transition={{ duration: 0.3 }}
               className="w-full h-full object-cover cursor-pointer"
+              loading="lazy"
+              decoding="async"
               onClick={() => setIsFullscreen(true)}
             />
           </AnimatePresence>
