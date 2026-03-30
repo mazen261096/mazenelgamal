@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { portfolioData } from "@/data/portfolioData";
 import { SafeLink } from "@/components/SafeLink";
-import { ArrowUpRight, Github, Layers } from "lucide-react";
+import { ArrowUpRight, Github, Globe, Layers } from "lucide-react";
 import { GooglePlayIcon, AppStoreIcon } from "@/components/icons/StoreIcons";
 
 const getLinkIcon = (link: string) => {
