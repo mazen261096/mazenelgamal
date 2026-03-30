@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { portfolioData } from "@/data/portfolioData";
-import { ArrowLeft, Github, Share2, Layers } from "lucide-react";
+import { ArrowLeft, Github, Globe, Share2, Layers } from "lucide-react";
 import { useState } from "react";
 import { toast } from "@/hooks/use-toast";
 import { SafeLink } from "@/components/SafeLink";
@@ -12,7 +12,7 @@ const getLinkDetails = (link: string) => {
   if (link.includes("github.com")) return { icon: <Github className="w-5 h-5" />, label: "View on GitHub" };
   if (link.includes("play.google.com")) return { icon: <GooglePlayIcon className="w-5 h-5" />, label: "Get on Play Store" };
   if (link.includes("apps.apple.com") || link.includes("apple.com")) return { icon: <AppStoreIcon className="w-5 h-5" />, label: "Get on App Store" };
-  return null;
+  return { icon: <Globe className="w-5 h-5" />, label: "Visit Website" };
 };
 
 const ShareButton = ({ platform, url, title }: { platform: string; url: string; title: string }) => {

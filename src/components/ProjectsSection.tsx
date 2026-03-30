@@ -1,21 +1,21 @@
 import { motion } from "framer-motion";
 import { portfolioData } from "@/data/portfolioData";
 import { SafeLink } from "@/components/SafeLink";
-import { ArrowUpRight, Github, Layers } from "lucide-react";
+import { ArrowUpRight, Github, Globe, Layers } from "lucide-react";
 import { GooglePlayIcon, AppStoreIcon } from "@/components/icons/StoreIcons";
 
 const getLinkIcon = (link: string) => {
   if (link.includes("github.com")) return <Github className="w-4 h-4" />;
   if (link.includes("play.google.com")) return <GooglePlayIcon className="w-4 h-4" />;
   if (link.includes("apps.apple.com") || link.includes("apple.com")) return <AppStoreIcon className="w-4 h-4" />;
-  return null;
+  return <Globe className="w-4 h-4" />;
 };
 
 const getLinkLabel = (link: string) => {
   if (link.includes("github.com")) return "GitHub";
   if (link.includes("play.google.com")) return "Play Store";
   if (link.includes("apps.apple.com") || link.includes("apple.com")) return "App Store";
-  return "Link";
+  return "Website";
 };
 
 const ProjectsSection = () => {

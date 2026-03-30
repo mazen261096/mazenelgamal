@@ -131,6 +131,22 @@ export const portfolioData: PortfolioData = {
   ],
   projects: [
     {
+      id: "proj-curiouszee",
+      name: "CuriousZee – Anonymous Social Platform",
+      description: "A full-stack social platform for anonymous Q&A, map-based content discovery, private messaging and real-time interactions. Built end-to-end from scratch: Flutter mobile app, responsive web app, Supabase backend, real-time systems (MQTT), cloud infrastructure with cost optimization. Live on Google Play, iOS under review.",
+      technologies: ["Flutter", "Dart", "Supabase", "MQTT", "Firebase FCM", "Cloudflare R2", "Oracle VM", "System Design", "REST APIs", "BLoC/Cubit"],
+      links: [
+        "https://play.google.com/store/apps/details?id=com.curiouszee.curiouszee",
+        "https://www.curiouszee.com"
+      ],
+      images: [
+        "/images/curiouszee-1.png",
+        "/images/curiouszee-2.png",
+        "/images/curiouszee-3.png"
+      ],
+      isEndToEnd: true
+    },
+    {
       id: "proj-mwakibun",
       name: "Mwakibun – Clinic Management SaaS",
       description: "Cross-platform SaaS app for clinic management: doctor schedules, room & bed bookings, patient records, prescriptions and attachments. Designed for multi-department clinics and real-time booking workflows.",
