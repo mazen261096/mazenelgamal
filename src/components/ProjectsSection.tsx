@@ -15,7 +15,7 @@ const getLinkLabel = (link: string) => {
   if (link.includes("github.com")) return "GitHub";
   if (link.includes("play.google.com")) return "Play Store";
   if (link.includes("apps.apple.com") || link.includes("apple.com")) return "App Store";
-  return "Link";
+  return "Website";
 };
 
 const ProjectsSection = () => {
