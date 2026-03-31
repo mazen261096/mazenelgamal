@@ -185,12 +185,13 @@ export const portfolioData: PortfolioData = {
       description: "Cross-platform HR app for attendance, leave requests, break tracking and working-hours calculation. I handled iOS support and external TestFlight deployment for company-wide testing.",
       technologies: ["Flutter", "Dart", "REST API", "Firebase", "CI/CD (TestFlight)", "MVVM", "Cubit"],
       links: [
-        "https://yourdomain.com/sb-hr",
-        "https://github.com/yourname/sb-hr"
+        "https://play.google.com/store/apps/details?id=com.geo.sb_hr",
+        "https://testflight.apple.com/join/6jA1nsmm"
       ],
       images: [
-        "/images/sbhr-1.png",
-        "/images/sbhr-2.png"
+        "https://drive.google.com/thumbnail?id=1cqrQhfo3zz7jDDKzNdlOj0mmj94eiv5i&sz=w1200",
+        "https://drive.google.com/thumbnail?id=1FYNSbsM70QC7UsJii9nSJnQtN6x7BYc3&sz=w1200",
+        "https://drive.google.com/thumbnail?id=1JokzZR3TBX0TaTNQ7kS31ZzW38pe2hIG&sz=w1200"
       ],
       isEndToEnd: false
     },
