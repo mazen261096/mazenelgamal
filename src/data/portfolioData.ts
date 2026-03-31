@@ -229,13 +229,14 @@ export const portfolioData: PortfolioData = {
     },
     {
       id: "proj-delivendor",
-      name: "Delivendor – Food & Grocery Delivery App",
-      description: "Mobile app for food & grocery ordering with advanced filtering, real-time order tracking, vendor ratings and full e-commerce flows.",
+      name: "Delivendor – Delivery Base Product",
+      description: "A white-label delivery platform built as a base product for DepoWeb. Features real-time order tracking, vendor management, advanced filtering, route optimization with Google Maps, payment integration and full e-commerce flows. Designed as a scalable foundation for multiple delivery verticals.",
       technologies: ["Flutter", "Dart", "BLoC", "Clean Architecture", "REST API", "Google Maps", "Stripe", "Push Notifications", "Animations"],
       links: [],
       images: [
-        "/images/delivendor-1.png",
-        "/images/delivendor-2.png"
+        "https://drive.google.com/thumbnail?id=13hvBJlDGSyk5xmk9H8abWJKDa3oCuCEH&sz=w1200",
+        "https://drive.google.com/thumbnail?id=1gBRoKWfz0xJACB_w9X3qte1XqqghyU23&sz=w1200",
+        "https://drive.google.com/thumbnail?id=1nPHy_hnai0TNGdzManjbRKh3ZLzRx6Np&sz=w1200"
       ],
       isEndToEnd: false
     },
