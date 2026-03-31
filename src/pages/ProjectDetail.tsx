@@ -11,6 +11,7 @@ import { GooglePlayIcon, AppStoreIcon } from "@/components/icons/StoreIcons";
 const getLinkDetails = (link: string) => {
   if (link.includes("github.com")) return { icon: <Github className="w-5 h-5" />, label: "View on GitHub" };
   if (link.includes("play.google.com")) return { icon: <GooglePlayIcon className="w-5 h-5" />, label: "Get on Play Store" };
+  if (link.includes("testflight.apple.com")) return { icon: <AppStoreIcon className="w-5 h-5" />, label: "TestFlight (iOS)" };
   if (link.includes("apps.apple.com") || link.includes("apple.com")) return { icon: <AppStoreIcon className="w-5 h-5" />, label: "Get on App Store" };
   return { icon: <Globe className="w-5 h-5" />, label: "Visit Website" };
 };

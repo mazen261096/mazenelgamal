@@ -152,12 +152,14 @@ export const portfolioData: PortfolioData = {
       description: "Cross-platform SaaS app for clinic management: doctor schedules, room & bed bookings, patient records, prescriptions and attachments. Designed for multi-department clinics and real-time booking workflows.",
       technologies: ["Flutter", "Dart", "MVVM", "Cubit", "REST (Dio)", "Firebase (Auth, Firestore, FCM)", "Realtime", "PDF Generation", "Cloud Storage"],
       links: [
-        "https://yourdomain.com/mwakibun",
-        "https://github.com/yourname/mwakibun"
+        "https://play.google.com/store/apps/details?id=com.mwakibun.mwakibun",
+        "https://testflight.apple.com/join/XAN2RmS4"
       ],
       images: [
-        "/images/mwakibun-1.png",
-        "/images/mwakibun-2.png"
+        "https://drive.google.com/thumbnail?id=1AxQCpbF8TnTr09c3AxqSbRtIuVOpnUmt&sz=w1200",
+        "https://drive.google.com/thumbnail?id=15n7ro_tRSolQ2cgFqeQirVbVQfyHY0NB&sz=w1200",
+        "https://drive.google.com/thumbnail?id=1PQ5kG5h6kcsBMMkmTlX1iW_v3Vmc0ABL&sz=w1200",
+        "https://drive.google.com/thumbnail?id=1NHW03utjIMI7YcWx6ACkdTgBjr7awaRZ&sz=w1200"
       ],
       isEndToEnd: true
     },

@@ -14,6 +14,7 @@ const getLinkIcon = (link: string) => {
 const getLinkLabel = (link: string) => {
   if (link.includes("github.com")) return "GitHub";
   if (link.includes("play.google.com")) return "Play Store";
+  if (link.includes("testflight.apple.com")) return "TestFlight";
   if (link.includes("apps.apple.com") || link.includes("apple.com")) return "App Store";
   return "Website";
 };
