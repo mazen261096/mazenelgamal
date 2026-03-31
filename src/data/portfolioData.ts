@@ -198,32 +198,34 @@ export const portfolioData: PortfolioData = {
     {
       id: "proj-masssooq",
       name: "Mass Sooq – Marketplace Mobile App",
-      description: "OpenSooq-like marketplace for buying & selling across categories. Features: advanced filtering, real-time tracking, vendor ratings and performant responsive UI.",
+      description: "Full-featured marketplace for buying & selling across categories. Features: advanced filtering, real-time tracking, vendor ratings, chat and performant responsive UI. Live on both stores.",
       technologies: ["Flutter", "Dart", "MVVM", "Cubit", "FCM", "REST (Dio)", "Realtime", "Filtering System"],
       links: [
-        "https://yourdomain.com/mass-sooq",
-        "https://github.com/yourname/mass-sooq"
+        "https://play.google.com/store/apps/details?id=com.soulnbody.masssooq",
+        "https://apps.apple.com/eg/app/id6749491273"
       ],
       images: [
-        "/images/masssooq-1.png",
-        "/images/masssooq-2.png"
+        "https://drive.google.com/thumbnail?id=11SWAxhBj1WwxhfQL27DmK-RlOv1rmusu&sz=w1200",
+        "https://drive.google.com/thumbnail?id=1bCSZ3qbqjG9tPSr0NAL3w9KwYsQpCoXU&sz=w1200",
+        "https://drive.google.com/thumbnail?id=1HZiAyyXDZECBxsIfw9jh9RMryxsDSm_U&sz=w1200"
       ],
       isEndToEnd: true
     },
     {
-      id: "proj-delivendor",
-      name: "Delivendor – Food & Grocery Delivery App",
-      description: "Mobile app for food & grocery ordering with advanced filtering, real-time order tracking, vendor ratings and full e-commerce flows.",
-      technologies: ["Flutter", "Dart", "BLoC", "Clean Architecture", "REST API", "Google Maps", "Stripe", "Push Notifications", "Animations"],
+      id: "proj-soom",
+      name: "Soom – Marketplace App (White-Label)",
+      description: "White-label variant of the Mass Sooq marketplace with a distinct brand identity. Same powerful features — advanced filtering, real-time tracking, vendor ratings and chat — under a different brand. Live on both stores.",
+      technologies: ["Flutter", "Dart", "MVVM", "Cubit", "FCM", "REST (Dio)", "Realtime", "White-Label Architecture"],
       links: [
-        "https://yourdomain.com/delivendor",
-        "https://github.com/yourname/delivendor"
+        "https://play.google.com/store/apps/details?id=com.soulnbody.soom",
+        "https://apps.apple.com/us/app/id6753927269"
       ],
       images: [
-        "/images/delivendor-1.png",
-        "/images/delivendor-2.png"
+        "https://drive.google.com/thumbnail?id=13zG-qJKv3IyHN7F1opoa0VAUgC0Z3Uyt&sz=w1200",
+        "https://drive.google.com/thumbnail?id=1J1kh_7JVTTc5-B1uHai_xmmAJ7MDFN8B&sz=w1200",
+        "https://drive.google.com/thumbnail?id=1fnH6y5vRNH04V8tIwCTnaMogzjjLzTfG&sz=w1200"
       ],
-      isEndToEnd: false
+      isEndToEnd: true
     },
     {
       id: "proj-elgamal-cars",
