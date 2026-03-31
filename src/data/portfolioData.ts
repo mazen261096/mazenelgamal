@@ -228,6 +228,18 @@ export const portfolioData: PortfolioData = {
       isEndToEnd: true
     },
     {
+      id: "proj-delivendor",
+      name: "Delivendor – Food & Grocery Delivery App",
+      description: "Mobile app for food & grocery ordering with advanced filtering, real-time order tracking, vendor ratings and full e-commerce flows.",
+      technologies: ["Flutter", "Dart", "BLoC", "Clean Architecture", "REST API", "Google Maps", "Stripe", "Push Notifications", "Animations"],
+      links: [],
+      images: [
+        "/images/delivendor-1.png",
+        "/images/delivendor-2.png"
+      ],
+      isEndToEnd: false
+    },
+    {
       id: "proj-elgamal-cars",
       name: "Elgamal Cars – Desktop Inventory App",
       description: "Desktop app (Windows/macOS) for car inventory management with advanced filtering, dynamic pricing algorithm, Excel import/export and automated PDF reports. Integrated social sharing for client communication.",
