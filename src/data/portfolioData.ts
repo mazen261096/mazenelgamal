@@ -148,8 +148,8 @@ export const portfolioData: PortfolioData = {
     },
     {
       id: "proj-mwakibun",
-      name: "Mwakibun – Clinic Management SaaS",
-      description: "Cross-platform SaaS app for clinic management: doctor schedules, room & bed bookings, patient records, prescriptions and attachments. Designed for multi-department clinics and real-time booking workflows.",
+      name: "Mwakibun Doctor – Clinic Management SaaS",
+      description: "Doctor-facing SaaS app for clinic management: schedules, room & bed bookings, patient records, prescriptions and attachments. Designed for multi-department clinics with real-time booking workflows.",
       technologies: ["Flutter", "Dart", "MVVM", "Cubit", "REST (Dio)", "Firebase (Auth, Firestore, FCM)", "Realtime", "PDF Generation", "Cloud Storage"],
       links: [
         "https://play.google.com/store/apps/details?id=com.mwakibun.mwakibun",
@@ -160,6 +160,22 @@ export const portfolioData: PortfolioData = {
         "https://drive.google.com/thumbnail?id=15n7ro_tRSolQ2cgFqeQirVbVQfyHY0NB&sz=w1200",
         "https://drive.google.com/thumbnail?id=1PQ5kG5h6kcsBMMkmTlX1iW_v3Vmc0ABL&sz=w1200",
         "https://drive.google.com/thumbnail?id=1NHW03utjIMI7YcWx6ACkdTgBjr7awaRZ&sz=w1200"
+      ],
+      isEndToEnd: true
+    },
+    {
+      id: "proj-mwakibun-patient",
+      name: "Mwakibun Patient – Patient Booking App",
+      description: "Patient-facing companion app for the Mwakibun platform: browse clinics, book appointments, view prescriptions, track medical history and receive real-time notifications for upcoming visits.",
+      technologies: ["Flutter", "Dart", "MVVM", "Cubit", "REST (Dio)", "Firebase (Auth, FCM)", "Realtime", "Cloud Storage"],
+      links: [
+        "https://play.google.com/store/apps/details?id=com.mwakibun.mwakibun_patient"
+      ],
+      images: [
+        "https://drive.google.com/thumbnail?id=1Qhcs13yS5Go6M3_hvu0S720WDgslmeEq&sz=w1200",
+        "https://drive.google.com/thumbnail?id=1ucvVSH8yp_bLuv0tMZnZFOH1N8-CtXlo&sz=w1200",
+        "https://drive.google.com/thumbnail?id=1h-UpOmCqdldYH7pliMoYUrf6NYKJe2RB&sz=w1200",
+        "https://drive.google.com/thumbnail?id=12JdA52zeLS2r-qLFDDH12XkSAFPhfBZG&sz=w1200"
       ],
       isEndToEnd: true
     },
