@@ -140,9 +140,9 @@ export const portfolioData: PortfolioData = {
         "https://www.curiouszee.com"
       ],
       images: [
-        "https://drive.google.com/thumbnail?id=1gMBLhoEV8NhmoqOexbvBucLpfQe1c0pL&sz=w1200",
-        "https://drive.google.com/thumbnail?id=1ThYuHdjO1WFg0u4OjcPyQEj_lE75urnr&sz=w1200",
-        "https://drive.google.com/thumbnail?id=1LkZ3Ed5kFxrZTEA4VZ9DKPaGjSdw3hjY&sz=w1200"
+        "https://drive.google.com/thumbnail?id=1Iu42qRHaApsd8cajEe6R2HpAZVl2GONi&sz=w1200",
+        "https://drive.google.com/thumbnail?id=1w444xnAnzlLk_rgZg9ERiiQS3B00wEkj&sz=w1200",
+        "https://drive.google.com/thumbnail?id=1JZ96jE_rZtMhhfy9TBqM6rJHrPOitOq0&sz=w1200"
       ],
       isEndToEnd: true
     },
