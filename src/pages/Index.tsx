@@ -17,7 +17,7 @@ const Index = () => {
   }, [personalInfo.name, personalInfo.profession]);
 
   return (
-    <div className="min-h-screen noise">
+    <div className="min-h-screen noise overflow-x-hidden">
       <Navbar />
       <main>
         <HeroSection />
