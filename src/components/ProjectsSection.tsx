@@ -53,7 +53,7 @@ const ProjectsSection = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <SafeLink to={`/project/${project.id}`} className="group block h-full">
-                <div className="glass glass-hover rounded-xl overflow-hidden h-full flex flex-col">
+                <div className="bg-card/80 border border-border/50 rounded-xl overflow-hidden h-full flex flex-col transition-all duration-300 hover:bg-card hover:border-primary/30 hover:shadow-lg">
                   <div className="relative overflow-hidden aspect-video">
                     <img
                       src={project.images[0]}
