@@ -245,12 +245,12 @@ export const portfolioData: PortfolioData = {
       name: "Elgamal Cars – Desktop Inventory App",
       description: "Desktop app (Windows/macOS) for car inventory management with advanced filtering, dynamic pricing algorithm, Excel import/export and automated PDF reports. Integrated social sharing for client communication.",
       technologies: ["Flutter (Desktop)", "Dart", "Cubit", "Excel Integration", "PDF Generation", "Desktop Packaging"],
-      links: [
-        "https://yourdomain.com/elgamal-cars"
-      ],
+      links: [],
       images: [
-        "/images/elgamal-1.png",
-        "/images/elgamal-2.png"
+        "https://drive.google.com/thumbnail?id=1ZE_iCBS5G979cnQ8teAgwxd3k2dGMO7D&sz=w1200",
+        "https://drive.google.com/thumbnail?id=1OcvYRki1s5PQM9WH_4Q5G3U_V9wPOnDe&sz=w1200",
+        "https://drive.google.com/thumbnail?id=1eNuHb4-GuO_p_PUIzV5qfvoeKJznnXU9&sz=w1200",
+        "https://drive.google.com/thumbnail?id=1JyKWaQeJ-T6e732bn9yubNxbUOl-6Qtf&sz=w1200"
       ],
       isEndToEnd: true
     },
@@ -259,13 +259,12 @@ export const portfolioData: PortfolioData = {
       name: "Sevenstili Designs – Financial Management App",
       description: "Financial management app: multi-wallets, deposits/withdrawals, transaction logs, invoices, real-time notifications and role-based access control. Built with Firebase realtime features and PDF exports.",
       technologies: ["Flutter", "Dart", "Firebase (Auth, Firestore, FCM)", "Cubit", "PDF Generation", "Realtime Notifications", "Role-Based Access"],
-      links: [
-        "https://yourdomain.com/sevenstili",
-        "https://github.com/yourname/sevenstili"
-      ],
+      links: [],
       images: [
-        "/images/sevenstili-1.png",
-        "/images/sevenstili-2.png"
+        "https://drive.google.com/thumbnail?id=1hy8DVTGqifJvJ8pRisR4Lo6DL4qRV1zU&sz=w1200",
+        "https://drive.google.com/thumbnail?id=1gYstgSj8y9XMNskSpM7gAaviqOVN-q93&sz=w1200",
+        "https://drive.google.com/thumbnail?id=1P9CecdL_wOTrDVChdPpDTnRrhnkUk5iw&sz=w1200",
+        "https://drive.google.com/thumbnail?id=1RQaOXNu0hfA9b8xDvbbzjPCH7Kxh6CwL&sz=w1200"
       ],
       isEndToEnd: true
     }
