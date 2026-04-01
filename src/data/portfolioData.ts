@@ -86,7 +86,7 @@ export const portfolioData: PortfolioData = {
     {
       id: "exp-1",
       companyName: "Soul and Body",
-      logoUrl: "/logos/soul-and-body.png",
+      logoUrl: "https://drive.google.com/thumbnail?id=180m-PCXZkEis6fxpHjR0B2bKC3-xfvPF&sz=w200",
       role: "Senior Flutter Developer",
       description: "Senior Flutter Developer delivering production SaaS apps end-to-end (design → APIs → stores). Built and scaled clinic & marketplace products with real-world deployment constraints. Ownership of architecture, releases, testing, and delivery.",
       startDate: "2024-11-01",
