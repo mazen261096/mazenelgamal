@@ -259,13 +259,12 @@ export const portfolioData: PortfolioData = {
       name: "Sevenstili Designs – Financial Management App",
       description: "Financial management app: multi-wallets, deposits/withdrawals, transaction logs, invoices, real-time notifications and role-based access control. Built with Firebase realtime features and PDF exports.",
       technologies: ["Flutter", "Dart", "Firebase (Auth, Firestore, FCM)", "Cubit", "PDF Generation", "Realtime Notifications", "Role-Based Access"],
-      links: [
-        "https://yourdomain.com/sevenstili",
-        "https://github.com/yourname/sevenstili"
-      ],
+      links: [],
       images: [
-        "/images/sevenstili-1.png",
-        "/images/sevenstili-2.png"
+        "https://drive.google.com/thumbnail?id=1hy8DVTGqifJvJ8pRisR4Lo6DL4qRV1zU&sz=w1200",
+        "https://drive.google.com/thumbnail?id=1gYstgSj8y9XMNskSpM7gAaviqOVN-q93&sz=w1200",
+        "https://drive.google.com/thumbnail?id=1P9CecdL_wOTrDVChdPpDTnRrhnkUk5iw&sz=w1200",
+        "https://drive.google.com/thumbnail?id=1RQaOXNu0hfA9b8xDvbbzjPCH7Kxh6CwL&sz=w1200"
       ],
       isEndToEnd: true
     }
