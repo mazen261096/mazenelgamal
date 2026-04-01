@@ -95,7 +95,7 @@ export const portfolioData: PortfolioData = {
     {
       id: "exp-2",
       companyName: "Depo Web",
-      logoUrl: "/logos/depo-web.png",
+      logoUrl: "https://drive.google.com/thumbnail?id=1hgOZwh5DTb4zaKtiVv00oAk1_yrMWvV5&sz=w200",
       role: "Mid-Level Flutter Developer",
       description: "Developed Talabat-like food delivery app using BLoC & Clean Architecture. Implemented optimized APIs, real-time order tracking, and improved UI/UX performance across multiple screen sizes.",
       startDate: "2024-04-01",
