@@ -80,13 +80,13 @@ const ProjectsSection = () => {
                         {project.technologies.slice(0, 3).map((tech) => (
                           <span
                             key={tech}
-                            className="px-2 py-1 text-xs font-medium bg-primary/20 text-primary rounded backdrop-blur-sm"
+                            className="px-2 py-1 text-xs font-medium bg-primary/90 text-primary-foreground rounded shadow-sm"
                           >
                             {tech}
                           </span>
                         ))}
                         {project.technologies.length > 3 && (
-                          <span className="px-2 py-1 text-xs font-medium bg-muted/80 text-muted-foreground rounded backdrop-blur-sm">
+                          <span className="px-2 py-1 text-xs font-medium bg-muted/90 text-muted-foreground rounded shadow-sm">
                             +{project.technologies.length - 3}
                           </span>
                         )}
