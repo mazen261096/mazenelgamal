@@ -104,7 +104,7 @@ export const portfolioData: PortfolioData = {
     {
       id: "exp-3",
       companyName: "Elgamal Cars",
-      logoUrl: "/logos/elgamal-cars.png",
+      logoUrl: "https://drive.google.com/thumbnail?id=12ppC5vNVzzp3bMRGC_N5OFmexYWNrzYt&sz=w200",
       role: "Founder & Software Developer",
       description: "Built a desktop car inventory system with advanced filtering & pricing logic, Excel integration, automated PDF generation and social-media / client communication integration.",
       startDate: "2023-04-01",
