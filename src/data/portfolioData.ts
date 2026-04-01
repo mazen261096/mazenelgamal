@@ -113,7 +113,7 @@ export const portfolioData: PortfolioData = {
     {
       id: "exp-4",
       companyName: "Future of Egypt (Army Forces)",
-      logoUrl: "/logos/army-forces.png",
+      logoUrl: "https://drive.google.com/thumbnail?id=1kAq54XFMr3sA1HnX7ypzU2vsNoCzssnz&sz=w200",
       role: "Junior Flutter Developer",
       description: "Developed a secure real-time communication app (WhatsApp-like). Built responsive, high-performance UI across devices and integrated Firebase & .NET APIs for realtime backend.",
       startDate: "2022-03-01",
