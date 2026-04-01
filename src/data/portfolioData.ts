@@ -55,7 +55,7 @@ export const portfolioData: PortfolioData = {
     profileImage: "/profile-photo.jpg",
     description: "Flutter Developer with 3+ years experience building scalable, production-ready apps using Clean Architecture, BLoC/Cubit, MVVM and modern CI/CD pipelines. Experienced with mobile (Android/iOS) and desktop (Windows/macOS) targets, Firebase, Supabase and end-to-end project delivery. Quick learner, strong ownership of releases, testing and app architecture."
   },
-  cvUrl: "/Mazen-Elgamal-CV.pdf",
+  cvUrl: "https://drive.google.com/uc?export=download&id=1egn3jbA1awqWaPWCirXaJlSccTfkvjav",
   contactInfo: [
     {
       id: "1",
