@@ -245,12 +245,12 @@ export const portfolioData: PortfolioData = {
       name: "Elgamal Cars – Desktop Inventory App",
       description: "Desktop app (Windows/macOS) for car inventory management with advanced filtering, dynamic pricing algorithm, Excel import/export and automated PDF reports. Integrated social sharing for client communication.",
       technologies: ["Flutter (Desktop)", "Dart", "Cubit", "Excel Integration", "PDF Generation", "Desktop Packaging"],
-      links: [
-        "https://yourdomain.com/elgamal-cars"
-      ],
+      links: [],
       images: [
-        "/images/elgamal-1.png",
-        "/images/elgamal-2.png"
+        "https://drive.google.com/thumbnail?id=1ZE_iCBS5G979cnQ8teAgwxd3k2dGMO7D&sz=w1200",
+        "https://drive.google.com/thumbnail?id=1OcvYRki1s5PQM9WH_4Q5G3U_V9wPOnDe&sz=w1200",
+        "https://drive.google.com/thumbnail?id=1eNuHb4-GuO_p_PUIzV5qfvoeKJznnXU9&sz=w1200",
+        "https://drive.google.com/thumbnail?id=1JyKWaQeJ-T6e732bn9yubNxbUOl-6Qtf&sz=w1200"
       ],
       isEndToEnd: true
     },
