@@ -53,7 +53,7 @@ export const portfolioData: PortfolioData = {
     name: "Mazen Elgamal",
     profession: "Flutter Developer",
     profileImage: "/profile-photo.jpg",
-    description: "Flutter Developer with 3+ years experience building scalable, production-ready apps using Clean Architecture, BLoC/Cubit, MVVM and modern CI/CD pipelines. Experienced with mobile (Android/iOS) and desktop (Windows/macOS) targets, Firebase, Supabase and end-to-end project delivery. Quick learner, strong ownership of releases, testing and app architecture."
+    description: "Flutter Developer with 4+ years of experience in Clean Architecture, BLoC, and advanced practices like CI/CD, Flutter Desktop (Windows/macOS), and Firebase Distribution. Built my projects with scalable, maintainable code. Quick to learn new tech independently, with a passion for creating high-quality, production-ready app"
   },
   cvUrl: "https://drive.google.com/uc?export=download&id=1egn3jbA1awqWaPWCirXaJlSccTfkvjav",
   contactInfo: [
