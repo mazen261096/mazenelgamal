@@ -86,7 +86,7 @@ export const portfolioData: PortfolioData = {
     {
       id: "exp-1",
       companyName: "Soul and Body",
-      logoUrl: "/logos/soul-and-body.png",
+      logoUrl: "https://drive.google.com/thumbnail?id=180m-PCXZkEis6fxpHjR0B2bKC3-xfvPF&sz=w200",
       role: "Senior Flutter Developer",
       description: "Senior Flutter Developer delivering production SaaS apps end-to-end (design → APIs → stores). Built and scaled clinic & marketplace products with real-world deployment constraints. Ownership of architecture, releases, testing, and delivery.",
       startDate: "2024-11-01",
@@ -95,7 +95,7 @@ export const portfolioData: PortfolioData = {
     {
       id: "exp-2",
       companyName: "Depo Web",
-      logoUrl: "/logos/depo-web.png",
+      logoUrl: "https://drive.google.com/thumbnail?id=1hgOZwh5DTb4zaKtiVv00oAk1_yrMWvV5&sz=w200",
       role: "Mid-Level Flutter Developer",
       description: "Developed Talabat-like food delivery app using BLoC & Clean Architecture. Implemented optimized APIs, real-time order tracking, and improved UI/UX performance across multiple screen sizes.",
       startDate: "2024-04-01",
@@ -104,7 +104,7 @@ export const portfolioData: PortfolioData = {
     {
       id: "exp-3",
       companyName: "Elgamal Cars",
-      logoUrl: "/logos/elgamal-cars.png",
+      logoUrl: "https://drive.google.com/thumbnail?id=12ppC5vNVzzp3bMRGC_N5OFmexYWNrzYt&sz=w200",
       role: "Founder & Software Developer",
       description: "Built a desktop car inventory system with advanced filtering & pricing logic, Excel integration, automated PDF generation and social-media / client communication integration.",
       startDate: "2023-04-01",
@@ -113,7 +113,7 @@ export const portfolioData: PortfolioData = {
     {
       id: "exp-4",
       companyName: "Future of Egypt (Army Forces)",
-      logoUrl: "/logos/army-forces.png",
+      logoUrl: "https://drive.google.com/thumbnail?id=1kAq54XFMr3sA1HnX7ypzU2vsNoCzssnz&sz=w200",
       role: "Junior Flutter Developer",
       description: "Developed a secure real-time communication app (WhatsApp-like). Built responsive, high-performance UI across devices and integrated Firebase & .NET APIs for realtime backend.",
       startDate: "2022-03-01",
@@ -122,7 +122,7 @@ export const portfolioData: PortfolioData = {
     {
       id: "exp-5",
       companyName: "Sevenstili Designs (Freelance)",
-      logoUrl: "/logos/sevenstili.png",
+      logoUrl: "https://drive.google.com/thumbnail?id=1paLKuhBpNMseyq8sERC-d0wbEvAwm3Oy&sz=w200",
       role: "Flutter Developer (Freelance)",
       description: "Developed a financial management mobile app with real-time transactions. Integrated Firebase Auth, Notifications, Realtime updates and multi-role access control for sensitive financial data.",
       startDate: "2021-10-01",
