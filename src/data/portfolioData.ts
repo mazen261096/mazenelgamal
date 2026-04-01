@@ -122,7 +122,7 @@ export const portfolioData: PortfolioData = {
     {
       id: "exp-5",
       companyName: "Sevenstili Designs (Freelance)",
-      logoUrl: "/logos/sevenstili.png",
+      logoUrl: "https://drive.google.com/thumbnail?id=1paLKuhBpNMseyq8sERC-d0wbEvAwm3Oy&sz=w200",
       role: "Flutter Developer (Freelance)",
       description: "Developed a financial management mobile app with real-time transactions. Integrated Firebase Auth, Notifications, Realtime updates and multi-role access control for sensitive financial data.",
       startDate: "2021-10-01",
