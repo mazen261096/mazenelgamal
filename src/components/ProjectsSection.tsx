@@ -53,7 +53,7 @@ const ProjectsSection = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <SafeLink to={`/project/${project.id}`} className="group block h-full">
-                <div className="glass glass-hover rounded-xl overflow-hidden h-full flex flex-col">
+                <div className="bg-card/80 border border-border/50 rounded-xl overflow-hidden h-full flex flex-col transition-all duration-300 hover:bg-card hover:border-primary/30 hover:shadow-lg">
                   <div className="relative overflow-hidden aspect-video">
                     <img
                       src={project.images[0]}
@@ -80,13 +80,13 @@ const ProjectsSection = () => {
                         {project.technologies.slice(0, 3).map((tech) => (
                           <span
                             key={tech}
-                            className="px-2 py-1 text-xs font-medium bg-primary/20 text-primary rounded backdrop-blur-sm"
+                            className="px-2 py-1 text-xs font-medium bg-primary/90 text-primary-foreground rounded shadow-sm"
                           >
                             {tech}
                           </span>
                         ))}
                         {project.technologies.length > 3 && (
-                          <span className="px-2 py-1 text-xs font-medium bg-muted/80 text-muted-foreground rounded backdrop-blur-sm">
+                          <span className="px-2 py-1 text-xs font-medium bg-muted/90 text-muted-foreground rounded shadow-sm">
                             +{project.technologies.length - 3}
                           </span>
                         )}
