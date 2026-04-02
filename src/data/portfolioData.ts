@@ -67,7 +67,7 @@ export const portfolioData: PortfolioData = {
       id: "2",
       name: "LinkedIn",
       logoUrl: "linkedin",
-      linkOrPhone: "https://linkedin.com/in/your-linkedin"
+      linkOrPhone: "https://www.linkedin.com/in/mazen2610"
     },
     {
       id: "3",
@@ -79,7 +79,7 @@ export const portfolioData: PortfolioData = {
       id: "4",
       name: "GitHub",
       logoUrl: "github",
-      linkOrPhone: "https://github.com/your-github"
+      linkOrPhone: "https://github.com/mazen261096"
     }
   ],
   experience: [
