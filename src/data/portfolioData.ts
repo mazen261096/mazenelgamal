@@ -79,7 +79,7 @@ export const portfolioData: PortfolioData = {
       id: "4",
       name: "GitHub",
       logoUrl: "github",
-      linkOrPhone: "https://github.com/your-github"
+      linkOrPhone: "https://github.com/mazen261096"
     }
   ],
   experience: [
