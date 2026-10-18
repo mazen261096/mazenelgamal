@@ -1,18 +1,24 @@
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { portfolioData } from "@/data/portfolioData";
-import { ArrowLeft, Github, Globe, Share2, Layers } from "lucide-react";
+import { ArrowLeft, Github, Globe, Share2, Layers, LayoutDashboard } from "lucide-react";
 import { useState } from "react";
 import { toast } from "@/hooks/use-toast";
 import { SafeLink } from "@/components/SafeLink";
 import ImageSlider from "@/components/ImageSlider";
 import { GooglePlayIcon, AppStoreIcon } from "@/components/icons/StoreIcons";
 
+const isDashboardLink = (link: string) => {
+  const host = link.replace(/^https?:\/\//, "").split("/")[0];
+  return host.startsWith("sellers.") || host.startsWith("admin.") || host.includes("dashboard");
+};
+
 const getLinkDetails = (link: string) => {
   if (link.includes("github.com")) return { icon: <Github className="w-5 h-5" />, label: "View on GitHub" };
   if (link.includes("play.google.com")) return { icon: <GooglePlayIcon className="w-5 h-5" />, label: "Get on Play Store" };
   if (link.includes("testflight.apple.com")) return { icon: <AppStoreIcon className="w-5 h-5" />, label: "TestFlight (iOS)" };
   if (link.includes("apps.apple.com") || link.includes("apple.com")) return { icon: <AppStoreIcon className="w-5 h-5" />, label: "Get on App Store" };
+  if (isDashboardLink(link)) return { icon: <LayoutDashboard className="w-5 h-5" />, label: "Merchant Dashboard" };
   return { icon: <Globe className="w-5 h-5" />, label: "Visit Website" };
 };
 
