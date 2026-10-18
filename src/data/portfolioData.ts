@@ -131,6 +131,24 @@ export const portfolioData: PortfolioData = {
   ],
   projects: [
     {
+      id: "proj-orderzee",
+      name: "OrderZee – Multi-Tenant SaaS Ordering Platform",
+      description: "Multi-tenant SaaS ordering platform for restaurants, cafes, supermarkets and other businesses: branded online stores, merchant dashboards, order management, inventory, branches and delivery management. Designed a cost-optimized real-time architecture (MQTT, Supabase, Cloudflare R2, Oracle Cloud) and owned the full product lifecycle end-to-end — architecture, development, deployment and production. Live on the web, Google Play in testing stage.",
+      technologies: ["Flutter", "Dart", "Supabase", "MQTT", "Cloudflare R2", "Oracle Cloud", "Multi-Tenant SaaS", "System Design", "REST APIs", "BLoC/Cubit"],
+      links: [
+        "https://orderzee.com/cameljuice",
+        "https://sellers.orderzee.com"
+      ],
+      images: [
+        "https://drive.google.com/thumbnail?id=11LAhtfIElThZloGbFJS4UbrYFa0OfCSb&sz=w1200",
+        "https://drive.google.com/thumbnail?id=1U_ajN5SuVjFxNpjiZeszPzJFQS9SjhGn&sz=w1200",
+        "https://drive.google.com/thumbnail?id=1l43b5ujBEHu9_RTko4NE4JxrJk3x7I0m&sz=w1200",
+        "https://drive.google.com/thumbnail?id=1oT8peOtL6wD6cISWnewhyJG8DFU3Fo2N&sz=w1200",
+        "https://drive.google.com/thumbnail?id=1kdvLxqpv2recQW4TLFwdUtC-I_Aj9haj&sz=w1200"
+      ],
+      isEndToEnd: true
+    },
+    {
       id: "proj-curiouszee",
       name: "CuriousZee – Anonymous Social Platform",
       description: "A full-stack social platform for anonymous Q&A, map-based content discovery, private messaging and real-time interactions. Built end-to-end from scratch: Flutter mobile app, responsive web app, Supabase backend, real-time systems (MQTT), cloud infrastructure with cost optimization. Live on Google Play, iOS under review.",
